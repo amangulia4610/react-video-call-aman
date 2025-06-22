@@ -1,12 +1,92 @@
-# React + Vite
+# React Video Calling App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple, modern video meeting app built with React, Vite, and [ZEGOCLOUD UIKit](https://www.zegocloud.com/uikit). Instantly create or join video rooms and connect with your friends or team!
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🚀 Start a new video meeting with one click
+- 🔗 Join an existing meeting using a Room ID
+- ⚡ Fast, responsive UI with Vite and React
+- 📦 Deployable to GitHub Pages
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Run locally
+
+```bash
+npm run dev
+```
+
+Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+---
+
+## Deployment (GitHub Pages)
+
+1. **Set the `base` in `vite.config.js`**  
+   Make sure your `vite.config.js` contains:
+   ```js
+   export default defineConfig({
+     base: '/your-repo-name/',
+     plugins: [react()],
+   })
+   ```
+
+2. **Add deploy scripts to `package.json`:**
+   ```json
+   "scripts": {
+     "predeploy": "npm run build",
+     "deploy": "gh-pages -d dist"
+   }
+   ```
+
+3. **Deploy:**
+   ```bash
+   npm run deploy
+   ```
+
+Your app will be live at:  
+`https://your-username.github.io/your-repo-name/`
+
+---
+
+## How It Works
+
+- **Home Page:**  
+  - Click "✨ Start a New Meeting" to generate a unique room and join instantly.
+  - Enter a Room ID and click "🚀 Join Meeting" to join an existing room.
+
+- **Room Page:**  
+  - Video meeting is powered by ZEGOCLOUD UIKit.
+  - Share the meeting link with others to join the same room.
+  - Click "Back to Home" to return to the main page.
+
+---
+
+## Customization
+
+- To use your own ZEGOCLOUD credentials, update `appId` and `serverSecret` in `src/components/Room.jsx`.
+- You can further style the app by editing `src/index.css`.
+
+---
+
+## License
+
+MIT
+
+---
+
+**Made with ❤️ using React, Vite, and
