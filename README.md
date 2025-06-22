@@ -1,6 +1,6 @@
 # React Video Calling App
 
-A simple, modern video meeting app built with React, Vite, and [ZEGOCLOUD UIKit](https://www.zegocloud.com/uikit). Instantly create or join video rooms and connect with your friends or team!
+A simple, modern video meeting app built with React, Vite, and [ZEGOCLOUD UIKit](https://www.zegocloud.com/docs/uikit/callkit-web/overview). Instantly create or join video rooms and connect with your friends or team!
 
 ## Features
 
@@ -14,8 +14,8 @@ A simple, modern video meeting app built with React, Vite, and [ZEGOCLOUD UIKit]
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/amangulia4610/react-video-call-aman.git
+cd react-video-call-aman
 ```
 
 ### 2. Install dependencies
