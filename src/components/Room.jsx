@@ -18,7 +18,7 @@ const Room = () => {
             name: 'Copy link',
             url:
              window.location.protocol + '//' + 
-             window.location.host + window.location.pathname + '/room/' + roomID,
+             window.location.host + window.location.pathname + '#/room/' + roomID,
           },
         ],
         scenario: {
@@ -34,7 +34,7 @@ const Room = () => {
             <div ref={myMeeting}></div>
 
         <button onClick={() => {
-            window.location.href = '/';
+            window.location.href = '/react-video-call-aman/'; // Adjust the path as needed
         }}>Back to Home</button>
     </div>
 
