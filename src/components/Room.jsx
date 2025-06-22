@@ -18,7 +18,7 @@ const Room = () => {
             name: 'Copy link',
             url:
              window.location.protocol + '//' + 
-             window.location.host + window.location.pathname
+             window.location.host + window.location.pathname + '/roomID/' + roomID,
           },
         ],
         scenario: {
